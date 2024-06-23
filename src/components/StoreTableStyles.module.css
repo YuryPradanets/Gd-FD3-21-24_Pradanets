@@ -1,0 +1,83 @@
+.container {
+padding: 0;
+margin: 0 auto;
+border-radius: 20px;
+  
+table{
+    padding: 0;
+    margin: 0 auto;    
+    table-layout: fixed;
+    border-spacing: 3px;
+    border-collapse: separate; 
+    /* border-spacing: 3px; */
+  }
+
+  th{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+  }
+
+  td{
+      padding: 2px;
+      border-radius: 10px;
+    }
+
+  td:nth-child(odd) {
+      background-color: lightblue;
+    }
+
+  td:nth-child(even) {
+      background-color: lightgreen;
+    }
+  
+  .title{
+    text-decoration: underline;
+    color: black;
+    font-size: 400;
+    font-family: Montserrat;
+  }
+
+  .imgBlock{
+    position: relative;
+    display: inline-block;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    transition: all 0.6s;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 0;
+    }
+
+  .imgBlock:hover img {
+    transform: scale(2);
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: 999;
+    }
+
+  .image{
+    background-color: rgb(168, 233, 168);
+  }
+
+  .name{
+  width: 300px;
+  height: 30px;
+  background-color: aquamarine;
+  }
+
+  .price{
+  width: 150px;
+  height: 30px;
+  background-color: rgb(209, 142, 142);
+  }
+  .quantity{
+  width: 200px;
+  height: 30px;
+  background-color: rgb(69, 154, 78);
+  }
+}

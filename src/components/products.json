@@ -1,0 +1,9 @@
+[
+  { "name": "Product 1", "price": 10, "quantity": 1, "image": "https://loremflickr.com/640/360?lock=1" },
+  { "name": "Product 2", "price": 15, "quantity": 11, "image": "https://loremflickr.com/640/360?lock=2" },
+  { "name": "Product 3", "price": 20, "quantity": 111, "image": "https://loremflickr.com/640/360?lock=3" },
+  { "name": "Product 4", "price": 25, "quantity": 1111, "image": "https://loremflickr.com/640/360?lock=4" },
+  { "name": "Product 5", "price": 30, "quantity": 11111, "image": "https://loremflickr.com/640/360?lock=5" },
+  { "name": "Product 6", "price": 35, "quantity": 111111, "image": "https://loremflickr.com/640/36?lock=6" },
+  { "name": "Product 7", "price": 40, "quantity": 111111, "image": "https://loremflickr.com/640/36?lock=7" }
+]

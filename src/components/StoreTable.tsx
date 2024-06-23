@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './StoreTableStyles.module.css';
 
 interface Product {
   name: string;
   price: number;
   quantity: number;
+  image: string;
 }
-
 interface StoreProps {
   storeName: string;
   products: Product[];
@@ -13,28 +14,27 @@ interface StoreProps {
 
 const StoreTable: React.FC<StoreProps> = ({ storeName, products }) => {
   return (
-    <div>
-      <h2>{storeName}</h2>
-      <table>
+    <div className={styles.container}>
+      <h2 className={styles.title}>{storeName}</h2>
+      <table >
         <thead>
-          <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Image</th>
+         <tr>
+            <th className={styles.name}>Name</th>
+            <th className={styles.price}>Price</th>
+            <th className={styles.quantity}>Quantity</th>
+            <th className={styles.image}>Image</th>
           </tr>
         </thead>
         <tbody>
           {products.map((product, index) => (
             <tr key={index}>
-              <td>{product.name}</td>
-              <td>{product.price}</td>
-              <td>{product.quantity}</td>
-              <td>
+              <td className={styles.name}>{product.name}</td>
+              <td className={styles.price}>{product.price}</td>
+              <td className={styles.quantity}>{product.quantity}</td>
+              <td className={styles.imgBlock}>
                 <img
-                  src={`https://picsum.photos/200/300?random=${index}`}
+                  src={product.image}
                   alt={product.name}
-                  style={{ width: '50px', height: '50px' }}
                 />
               </td>
             </tr>
