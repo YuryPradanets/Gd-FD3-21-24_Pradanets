@@ -1,15 +1,16 @@
 import React from 'react';
 
 type ContentProps = {
-  textContent: string;
+  title: string,
+  descrip: string
 }
+export type { ContentProps };
 
-export const Content: React.FC<ContentProps> = ({ textContent }) => {
-  return (
-    <>
-      <p>
-        {textContent}
-      </p>
-    </>
+export const Content = ({ title, descrip }: ContentProps) => {
+    return (
+    <div>
+      <h1>{title }</h1>
+      <p>{descrip}</p>
+    </div>
   );
-}
+};

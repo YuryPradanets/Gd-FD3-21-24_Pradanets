@@ -3,17 +3,13 @@ import { Header } from "../../components/Header";
 import { Content } from "../../components/Content";
 import { Footer } from "../../components/Footer";
 
-type PostsProps = {
-  textPosts: string;
-}
 
-export const PostsPage = () => {
+export const TermsPage = () => { 
   return (
     <>
       <Header />
-       <Content title="Page Posts" descrip="Posts возможно" />
+      <Content title="TERMS PAGE" descrip='B это TERMS' />
       <Footer />
-      
     </>
-  );
+  )
 }
