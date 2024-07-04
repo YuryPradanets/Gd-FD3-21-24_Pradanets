@@ -1,19 +1,28 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { Header } from "../../components/Header";
-import { Content } from "../../components/Content";
 import { Footer } from "../../components/Footer";
 
-type PostsProps = {
-  textPosts: string;
-}
+export const PostsPage: React.FC = () => {
+  useEffect(() => {
+    const ids: string[] = [];
+    for (let i = 1; i <= 20; i++) {
+      ids.push(`post-${i}`);
+    }
+    sessionStorage.setItem('postIds', JSON.stringify(ids));
+  }, [])
 
-export const PostsPage = () => {
   return (
-    <>
+    <div>
       <Header />
-       <Content title="Здесь вы можете раасместить свои посты" descrip="Мы с радостьтю их учтем" />
-      <Footer />
-      
-    </>
+      <h1>Posts</h1>
+      <ul>
+        {JSON.parse(sessionStorage.getItem('postIds') || '[]').map((id: string) => (
+          <li key={id}>
+            <a href={`/post/${id}`}>Post {id}</a>
+          </li>
+        ))}
+      </ul>
+      <Footer/>
+    </div>
   );
-}
+};

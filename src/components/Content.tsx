@@ -8,7 +8,7 @@ export type { ContentProps };
 
 export const Content = ({ title, descrip }: ContentProps) => {
     return (
-    <div>
+    <div className='content_Item'>
       <h1>{title }</h1>
       <p>{descrip}</p>
     </div>
