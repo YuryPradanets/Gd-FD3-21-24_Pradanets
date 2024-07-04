@@ -7,13 +7,11 @@ import { Content } from './components/Content';
 
 type textLorem = string;
 
-const textLorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ratione iusto minus magnam laborum velit vel totam quidem iure quaerat animi, similique non! Labore, veniam aperiam quam numquam omnis quis?";
-
 function App() {
   return (
     <div className="App">
       <Header />
-      <Content title="ПРивет это сновы ты???" descrip='И опять непонятно ни фига'/>
+      <Content title="Главная страница" descrip="Это приветственный контент: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ratione iusto minus magnam laborum velit vel totam quidem iure quaerat animi, similique non! Labore, veniam aperiam quam numquam omnis quis?" />
       <Footer/>
     </div>
   );

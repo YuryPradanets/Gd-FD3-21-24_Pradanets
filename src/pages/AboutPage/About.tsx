@@ -13,7 +13,7 @@ export function AboutPage() {
   return (
     <div className={styles.container}>
       <Header />
-      <Content title="Page ABOUT" descrip="Наверное" />
+      <Content title="Доставка и оплата" descrip="Доставка мёда осуществляется по Минску бесплатно от трех литров." />
       <Footer />
     </div>
   )

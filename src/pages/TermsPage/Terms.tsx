@@ -8,7 +8,7 @@ export const TermsPage = () => {
   return (
     <>
       <Header />
-      <Content title="TERMS PAGE" descrip='B это TERMS' />
+      <Content title="Условия сотрудничества" descrip='Мы предоставляем только самые выгодные условия сотрудничества с нами' />
       <Footer />
     </>
   )

@@ -17,20 +17,20 @@ import { TermsPage } from './pages/TermsPage/Terms';
 
 const router = createBrowserRouter([
   {
-    path: '/start',
-    element: (<StartPage/>)
+    path: '/',
+    element: <StartPage/>
   },
   {
     path: '/about',
-    element: (<AboutPage />)
+    element: <AboutPage />
   },
   {
     path: '/terms',
-    element: (<TermsPage/>)
+    element: <TermsPage/>
   },
   {
     path: '/posts',
-    element: (<PostsPage/>)
+    element: <PostsPage/>
   },
   // {
   //   path: ':id',

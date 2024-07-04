@@ -11,7 +11,7 @@ export const PostsPage = () => {
   return (
     <>
       <Header />
-       <Content title="Page Posts" descrip="Posts возможно" />
+       <Content title="Здесь вы можете раасместить свои посты" descrip="Мы с радостьтю их учтем" />
       <Footer />
       
     </>

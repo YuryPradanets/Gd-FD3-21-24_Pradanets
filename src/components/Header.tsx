@@ -1,5 +1,5 @@
 import { Router } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 
 export function Header() { 
@@ -7,10 +7,11 @@ export function Header() {
 
   return (
     <>
-      <a href="">About</a>
-      <a href="">Terms</a>
-      <a href="">Posts</a>
-      <a href="">Start</a>
+      <Link to ="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/posts">Posts</Link>
+      <Link to ="/terms">Terms</Link>
+      
       
     </>
   )
