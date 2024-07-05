@@ -21,15 +21,15 @@ export const NotFound: React.FC = () => {
 //   );
 // };
 
-export const MyRouter: React.FC = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route>
-          <Route path="/" element={<PostsPage />} />
-          <Route path="/post/:id" element={<PostDynamic />} />
-        </Route>
-      </Routes>
-    </Router>
-  );
-};
+// export const MyRouter: React.FC = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route>
+//           <Route path="/" element={<PostsPage />} />
+//           <Route path="/post/:id" element={<PostDynamic />} />
+//         </Route>
+//       </Routes>
+//     </Router>
+//   );
+// };

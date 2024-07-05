@@ -1,7 +1,7 @@
 // styles.js
-const styles = {
+export const styles = {
   about: {
-    backgroundColor: "black",
+    backgroundColor: "green",
     color: "white",
     fontSize: "16px",
     // Дополнительные стили для страницы About
@@ -12,10 +12,25 @@ const styles = {
     fontSize: "14px",
     // Дополнительные стили для страницы Posts
   },
-  // Дополнительные объекты стилей для других страниц
+  terms: {
+    backgroundColor: "green",
+    color: "white",
+    fontSize: "16px",
+    // Дополнительные стили для страницы About
+  },
+  start: {
+    backgroundColor: "green",
+    color: "white",
+    fontSize: "16px",
+    // Дополнительные стили для страницы About
+  },
+  other: {
+    backgroundColor: "green",
+    color: "white",
+    fontSize: "16px",
+    // Дополнительные стили для страницы About
+  },
 };
-
-export default styles;
 
 // // Наш компонент на странице About
 // import React from 'react';
